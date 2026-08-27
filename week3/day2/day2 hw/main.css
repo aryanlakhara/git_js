@@ -1,0 +1,53 @@
+/* =====================================================================
+   Make It Responsive — STARTER
+   Right now this gallery is NOT responsive. Your job: make it
+     - 1 column on mobile (base styles),
+     - 2 columns on tablet  (a min-width media query),
+     - 3 columns on desktop (a second min-width media query),
+   and stop images from overflowing.
+
+   Build it mobile-first: write the phone layout as the base, then ADD
+   min-width media queries that layer on more columns as the screen grows.
+   Do not edit index.html — all your work happens here.
+   ===================================================================== */
+
+   body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 16px;
+    color: #1a1a2e;
+    background: #f4f6fb;
+  }
+  .gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #e2e6f2;
+    border-radius: 12px;
+    padding: 16px;
+  }
+  
+  .card h2 { margin: 8px 0 4px; font-size: 18px; }
+  .card p  { margin: 0; color: #5b6488; font-size: 14px; }
+  
+  @media (min-width: 600px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  

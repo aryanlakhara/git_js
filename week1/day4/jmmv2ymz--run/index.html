@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v2.8.0</title>
+
+  <!-- <link rel="shortcut icon" type="image/png" href="jasmine/jasmine-2.8.0/face.png"> -->
+  <link rel="stylesheet" href="jasmine/jasmine-2.8.0/jasmine.css">
+  <link rel="stylesheet" href="main.css">
+
+  <script src="jasmine/jasmine-2.8.0/jasmine.js"></script>
+  <script src="jasmine/jasmine-2.8.0/jasmine-html.js"></script>
+  <script src="jasmine/jasmine-2.8.0/boot.js"></script>
+
+  <!-- include source files here... -->
+
+  <script src="src/app.js"></script>
+
+  <!-- include spec files here... -->
+  <script src="tests/FunctionsTest.js"></script>
+
+</head>
+
+<body>
+  <!-- ================================================================
+       ONLY EDIT THIS <body>. Leave the doctype and <head> untouched.
+       This page is "div soup": every region is a generic <div>, and the
+       button is a clickable <div>. Refactor it into semantic HTML so
+       every test goes green. Delete each TODO as you finish it.
+       ================================================================ -->
+
+  <!-- TODO 1 (tests 1, 6, 9): turn this into a <header> -->
+  <header>
+    <h1>Aarav's Blog</h1>
+  </header>
+
+  <!-- TODO 2 (tests 2, 6): turn this into a <nav> -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#posts">Posts</a>
+  </nav>
+
+  <!-- TODO 3 (tests 3, 6, 9, 10): turn this into a <main> (there must be exactly ONE) -->
+ <main>
+
+    <!-- TODO 4 (tests 4, 6, 10): turn this into an <article> inside main -->
+      <article>
+      <h2>Why a button isn't a div</h2>
+      <p>Today I learned that a real button is focusable and works with a keyboard.</p></article>
+      </main>
+
+
+      <!-- TODO 5 (tests 7, 8): replace this clickable <div> with a real <button> -->
+      <button class="button" onclick="alert('Subscribed!')">Subscribe
+  </button>
+
+
+  <!-- TODO 6 (tests 5, 6): turn this into a <footer> -->
+  <footer><div class="footer>"
+    <p> 2026 Aarav</p>
+  </div></footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v2.8.0</title>
+
+  <!-- <link rel="shortcut icon" type="image/png" href="jasmine/jasmine-2.8.0/face.png"> -->
+  <link rel="stylesheet" href="jasmine/jasmine-2.8.0/jasmine.css">
+  <link rel="stylesheet" href="main.css">
+
+  <script src="jasmine/jasmine-2.8.0/jasmine.js"></script>
+  <script src="jasmine/jasmine-2.8.0/jasmine-html.js"></script>
+  <script src="jasmine/jasmine-2.8.0/boot.js"></script>
+
+  <!-- include source files here... -->
+
+  <script src="src/app.js"></script>
+
+  <!-- include spec files here... -->
+  <script src="tests/FunctionsTest.js"></script>
+
+</head>
+
+<body>
+  <!-- ================================================================
+       ONLY EDIT THIS <body>. Leave the doctype and <head> untouched.
+       Build an accessible "Class Timetable" data table so every test
+       goes green. Delete each TODO as you finish it.
+       ================================================================ -->
+
+  <h1>My Timetable</h1>
+
+  <!-- TODO 1 (tests 1, 10): create a single <table> to hold everything below. -->
+
+    <!-- TODO 2 (test 2): add a <caption> that titles the table,
+         e.g. <caption>Class timetable — Week 1</caption> -->
+
+    <!-- TODO 3 (tests 3, 5, 6): add a <thead> with one header row.
+         Each column label is a <th scope="col"> (e.g. Day, 9 AM, 11 AM). -->
+
+    <!-- TODO 4 (tests 4, 7, 8, 9, 10): add a <tbody> with at least 3 rows.
+         In each row, the first cell is a <th scope="row"> (the day) and the
+         rest are <td> data cells. Every row must have the SAME number of
+         cells as the header row. -->
+         <table border="2px">
+         <caption> class timetable - week1</caption>
+          
+          <thead>
+               <th scope="col"> day</th>
+               <th scope="col">9 am</th>
+               <th scope="col">11 am</th>
+          </thead>
+          
+          <tbody>
+          <tr>
+               <th scope="row"> monday</th>
+               <td>science</td>
+               <td>maths</td>
+          </tr>
+          
+          <tr>
+               <th scope="row">wednesday</th>
+               <td>history</td>
+               <td>geography</td>
+          </tr>
+
+          <tr>
+              <th scope="row">no day</th>
+              <td>mistry</td>
+              <td>naman</td>
+          </tr>
+
+          </tbody> 
+         </table>
+         
+
+</body>
+
+</html>

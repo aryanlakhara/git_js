@@ -1,0 +1,23 @@
+/* ====================================================================
+   Specificity Fix-It — main.css
+   --------------------------------------------------------------------
+   The "Buy now" link (<a id="buy" class="cta">) should be BRAND-BLUE
+   (#1e6fff), but it renders GREY. Two things are wrong here:
+
+     1. The grey rule leans on !important to force the win — a crutch.
+     2. The intended .cta rule isn't specific enough to win on its own.
+
+   YOUR JOB (edit only this file, and do NOT add !important):
+     - Remove the !important from the grey rule.
+     - Refine the .cta rule so it is MORE SPECIFIC than "#content a"
+       (add the id/element that already wraps the link — do not delete
+       the existing selectors, refine them).
+
+   Goal: the intended brand colour wins purely by specificity.
+   ==================================================================== */
+
+/* Grey link colour — currently winning because of !important. */
+#content a { color:goldenrod; }
+
+/* Intended brand colour — currently losing the cascade. */
+#content .cta { color: #1e6fff; }

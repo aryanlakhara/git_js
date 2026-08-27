@@ -1,0 +1,180 @@
+ /* --- GLOBAL STYLES --- */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            text-align: center;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* --- NAVIGATION BAR --- */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .btn-white {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* --- HERO TEXT & STATS --- */
+        .hero {
+            padding: 60px 20px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            max-width: 600px;
+            margin: 0 auto 60px auto;
+            line-height: 1.3;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin-bottom: 80px;
+        }
+
+        .stat-item h2 {
+            font-size: 48px;
+            margin: 0 0 10px 0;
+        }
+
+        .stat-item p {
+            font-size: 14px;
+            color: #aaaaaa;
+            margin: 0;
+        }
+
+        /* --- FEATURES CARDS --- */
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0 40px;
+            margin-bottom: 80px;
+        }
+
+        .card {
+            background-color: #1a1a1a; /* Dark gray */
+            padding: 40px 30px;
+            border-radius: 12px;
+            width: 30%;
+            text-align: left;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #cccccc;
+            line-height: 1.5;
+        }
+
+        /* --- DOMAIN SEARCH SECTION --- */
+        .domain-section {
+            padding: 60px 20px;
+            background-color: #000000;
+        }
+
+        .domain-section h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #333333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+
+        .search-bar span {
+            font-size: 20px;
+            color: #aaaaaa;
+        }
+
+        .search-bar input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 0 15px;
+            outline: none;
+        }
+
+        .search-bar input::placeholder {
+            color: #888888;
+        }
+
+        .domain-subtext {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+
+        .domain-subtext a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* --- AVATARS OVERLAP --- */
+        .avatars {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .avatars img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #000; /* Creates the overlap effect */
+            margin-left: -15px; /* Pulls images to the left to overlap */
+            object-fit: cover;
+        }
+
+        .avatars img:first-child {
+            margin-left: 0;
+        }

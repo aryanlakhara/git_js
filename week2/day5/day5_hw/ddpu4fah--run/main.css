@@ -1,0 +1,25 @@
+
+
+   body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: #f7f9ff; }
+
+   .nav {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:10px;
+     background: #1F4E78;
+     color: #fff 
+   }
+   
+   .brand { font-weight: 800; font-size: 15px; }
+   
+   .links a { color: #dbe6f4; text-decoration: none; font-size: 13px; font-weight: 600; }
+   .links{
+    display:flex;
+    align-items:center;
+    gap: 18px;
+    list-style:none;
+    padding:0;
+
+   }
+   
