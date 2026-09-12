@@ -1,0 +1,43 @@
+<!-- What is Dom (document object model)
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            color: blue;
+        }
+        .name{
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">What is Dom (document object model)</h1>
+    <script>
+        // let amsihee=document.querySelector(".title");
+        let title=document.getElementById("title")
+       title.textContent="Who";
+       title.style.color="red"
+       title.style.background='yellow';
+       title.remove()
+
+
+    //    Creating element by js;
+    let arr=["apple","kanishka","Monika","sam",'jai']
+     for(let i=0;i<arr.length;i++){
+        let h1=document.createElement("h1");
+        h1.setAttribute("class","name")
+        h1.textContent=arr[i]
+        document.querySelector("body").append(h1)
+     }
+    </script>
+
+</body>
+
+</html> -->
